@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Finpay | Get Paid Early</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-gradient-to-b from-[#E5EEF0] via-[#F3F7F8] to-white  text-slate-900 font-sans">
+
+  <!-- HEADER -->
+  <header class="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-20 py-6">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <img src="images/Frame 533.png" alt="Finpay" class="h-8 w-auto">
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex gap-8 text-sm text-slate-700 font-medium">
+          <a href="#" class="hover:text-teal-600 transition">Products</a>
+          <a href="#" class="hover:text-teal-600 transition">Customers</a>
+          <a href="#" class="hover:text-teal-600 transition">Pricing</a>
+          <a href="#" class="hover:text-teal-600 transition">Learn</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false"
+                class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-200 text-slate-700 hover:bg-slate-100">
+          <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+
+        <button class="hidden md:inline bg-white text-sm text-black px-5 py-2 rounded-md hover:bg-blue-50 transition">Login</button>
+        <button class="hidden md:inline bg-[#2A8E9E] text-white px-5 py-2 rounded-md text-sm shadow hover:bg-teal-700 transition">Sign Up</button>
+
+        <!-- Mobile auth buttons (inside mobile menu for space) -->
+      </div>
+    </div>
+
+    <!-- Mobile menu (collapsible) -->
+    <nav id="mobile-menu" class="md:hidden mt-4 hidden">
+      <div class="bg-white rounded-lg shadow-sm p-4 space-y-3">
+        <a href="#" class="block text-sm text-slate-700 hover:text-teal-600">Products</a>
+        <a href="#" class="block text-sm text-slate-700 hover:text-teal-600">Customers</a>
+        <a href="#" class="block text-sm text-slate-700 hover:text-teal-600">Pricing</a>
+        <a href="#" class="block text-sm text-slate-700 hover:text-teal-600">Learn</a>
+        <div class="pt-2 border-t border-slate-100 mt-2 flex gap-3">
+          <button class="flex-1 bg-white text-sm text-black px-4 py-2 rounded-md hover:bg-blue-50 transition">Login</button>
+          <button class="flex-1 bg-teal-600 text-white px-4 py-2 rounded-md text-sm shadow hover:bg-teal-700 transition">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ <!-- HERO -->
+<section class="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-20 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <!-- Left column -->
+  <div class="pr-0 md:pr-4 text-center md:text-left">
+      <!-- Headings: fixed nesting and added spacing -->
+      <div class="space-y-6">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-slate-800">
+          Get paid early
+        </h1>
+
+        <h2 class="text-2xl sm:text-3xl md:text-3xl font-semibold text-slate-700 leading-snug">
+          save automatically<br />all your pay.
+        </h2>
+      </div>
+
+    <p class="mt-6 text-slate-600 max-w-2xl leading-relaxed mx-auto md:mx-0">
+      Supports small businesses with simple invoicing, powerful integrations, and cash flow management tools.
+    </p>
+
+    <!-- Email input + button -->
+    <div class="mt-8 flex justify-center md:justify-start">
+      <div class="relative w-full sm:w-96">
+        <input
+          type="email"
+          placeholder="Your business email"
+          class="w-full pl-4 pr-28 py-3 rounded-md border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-400"
+        />
+        <button
+          class="absolute top-1/2 right-1 -translate-y-1/2 bg-[#2A8E9E] text-white text-sm px-4 py-3 rounded-md hover:bg-teal-700 transition"
+        >
+          Get Started
+          <span class="inline-block ml-1">↗</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Partner logos -->
+    <div class="mt-10 flex justify-center md:justify-start">
+      <img src="images/Frame 539.png" alt="Partners" class="h-8 sm:h-10 opacity-90">
+    </div>
+  </div>
+
+
+    <!-- Right column (card) -->
+    <div class="relative flex justify-center md:justify-end">
+      <div class="relative w-full max-w-sm bg-white rounded-2xl shadow-xl p-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="flex items-center gap-2">
+              <div class="w-5 h-5 rounded-md bg-teal-500 flex items-center justify-center">
+                <div class="w-2 h-2 bg-white rounded-sm"></div>
+              </div>
+              <h3 class="font-semibold text-slate-900">Dipa Inhouse</h3>
+            </div>
+            <p class="text-sm text-slate-500 mt-1">dipainhouse@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <p class="text-xs text-slate-500">Invoice</p>
+          <p class="text-2xl font-bold text-slate-900 mt-1">$1,876,580</p>
+          <p class="text-sm text-slate-400 mt-1">April 21, 2024</p>
+        </div>
+
+        <div class="mt-6 space-y-3">
+          <label class="flex items-center justify-between border rounded-lg p-3 cursor-pointer hover:bg-slate-50 transition">
+            <div class="flex items-center gap-2">
+              <img src="images/majesticons_creditcard.png" alt="" class="h-5 w-5">
+              <span class="text-slate-700 text-sm">Credit Card</span>
+            </div>
+            <input type="radio" name="payment" checked class="text-teal-600 focus:ring-0" />
+          </label>
+
+          <label class="flex items-center justify-between border rounded-lg p-3 cursor-pointer hover:bg-slate-50 transition">
+            <div class="flex items-center gap-2">
+              <img src="images/Group (1).png" alt="" class="h-5 w-5">
+              <span class="text-slate-700 text-sm">Bank Transfer</span>
+            </div>
+            <input type="radio" name="payment" class="text-teal-600 focus:ring-0" />
+          </label>
+        </div>
+
+        <button class="mt-6 w-full bg-slate-900 text-white font-medium py-3 rounded-lg hover:bg-slate-800 transition">Pay</button>
+
+        <img src="images/hero-card.png" alt="Visa" class="absolute -top-12 -right-10 w-44 rounded-xl shadow-2xl hidden sm:block" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-20 py-12">
+    <div class="bg-white rounded-2xl shadow-sm p-8 sm:p-10">
+      <p class="text-sm font-semibold text-[#2A8E9E] uppercase tracking-wide">Future Payment</p>
+
+      <div class="mt-6 flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 leading-tight max-w-2xl">
+          Experience that grows with your scale.
+        </h2>
+        <p class="text-slate-600 max-w-md">
+          Design a financial operating system that works for your business and streamlines cash flow management.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div class="flex flex-col items-center px-4">
+          <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+            <img src="images/Vector.png" alt="Free transfer" class="h-7 w-7 object-contain" />
+          </div>
+          <h4 class="font-semibold text-slate-900 mb-2">Free transfer</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Create a financial experience and automate repeat purchases by scheduling recurring payments.</p>
+        </div>
+
+        <div class="flex flex-col items-center px-4">
+          <div class="w-14 h-14 rounded-xl bg-indigo-50 flex items-center justify-center mb-4">
+            <img src="images/Group.png" alt="Multiple accounts" class="h-7 w-7 object-contain" />
+          </div>
+          <h4 class="font-semibold text-slate-900 mb-2">Multiple accounts</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Run your operations with cash from your account and generate yield on funds stored in your account.</p>
+        </div>
+
+        <div class="flex flex-col items-center px-4">
+          <div class="w-14 h-14 rounded-xl bg-teal-50 flex items-center justify-center mb-4">
+            <img src="images/Vector (1).png" alt="Unmatched security" class="h-7 w-7 object-contain" />
+          </div>
+          <h4 class="font-semibold text-slate-900 mb-2">Unmatched security</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Securely manage your finances with organization-wide MFA, card-locking, and account-level controls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-20 py-12">
+    <div class="text-center mb-8">
+      <p class="text-sm font-medium text-[#2A8E9E] uppercase tracking-widest">WHY US</p>
+      <h4 class="mt-3 text-3xl md:text-4xl font-extrabold text-gray-900">Why they prefer Finpay</h4>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <article class="rounded-2xl bg-[#eaf6f6] p-8 md:p-10 min-h-[220px] flex flex-col justify-start">
+        <p class="text-7x1 md:text-5xl font-extrabold text-[#2A8E9E] leading-none">3k+</p>
+        <p class="mt-6 text-gray-800 max-w-xs">Business already running on Finpay</p>
+      </article>
+
+      <article class="rounded-2xl bg-[#eaf6f6] p-8 md:p-10 min-h-[220px] flex flex-col justify-between">
+        <div>
+          <h3 class="text-lg md:text-xl font-semibold text-gray-900">Instant Withdraw your funds at any time</h3>
+        </div>
+        <div class="flex items-end justify-center mt-6">
+          <div class="bg-white rounded-xl shadow-md p-5 w-full max-w-[220px]">
+            <img src="images/Frame 576.png" alt="Instant withdraw" class="w-[90%] h-auto object-contain" />
+          </div>
+        </div>
+      </article>
+
+      <article class="md:col-span-2 rounded-2xl bg-[#eaf6f6] p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div class="flex-1">
+          <h3 class="text-lg font-semibold text-gray-900">No asset volatility</h3>
+          <p class="mt-3 text-sm text-gray-600 max-w-md">Generate returns on your cash reserves without making any investments.</p>
+        </div>
+
+        <div class="flex-shrink-0 w-full md:w-[520px]">
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <img src="images/Frame 580.png" alt="Summary chart" class="w-full h-36 object-contain" />
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- STEP SECTION -->
+  <section class="bg-[#033042] text-white py-20">
+    <div class="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-12">
+      <p class="text-sm font-medium text-slate-400 uppercase tracking-wide">Step</p>
+      <h2 class="mt-3 text-3xl md:text-4xl font-semibold leading-snug max-w-2xl">
+        Maximize your returns with a<br class="hidden md:block" />
+        Reserve account that generates.
+      </h2>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-[#0a3c50] rounded-md p-6 shadow-sm">
+          <div class="text-xl font-bold text-teal-400 mb-3"><img src="images/1.png" alt=""></div>
+          <h3 class="text-base font-medium text-white">Open your account</h3>
+          <p class="mt-2 text-sm text-slate-400 leading-relaxed">Sign up to Finpay and set up your account from the dashboard.</p>
+        </div>
+
+        <div class="bg-[#0a3c50] rounded-md p-6 shadow-sm">
+          <div class="text-xl font-bold text-teal-400 mb-3"><img src="images/2.png" alt=""></div>
+          <h3 class="text-base font-medium text-white">Transfer your money</h3>
+          <p class="mt-2 text-sm text-slate-400 leading-relaxed">Move money from one account into another and start earning up.</p>
+        </div>
+
+        <div class="bg-[#0a3c50] rounded-md p-6 shadow-sm">
+          <div class="text-xl font-bold text-teal-400 mb-3"><img src="images/3.png" alt=""></div>
+          <h3 class="text-base font-medium text-white">Watch your balance grow</h3>
+          <p class="mt-2 text-sm text-slate-400 leading-relaxed">Accessed instantly and remain insulated from market volatility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR MISSION -->
+  <section class="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-12 py-20 text-center bg-white">
+    <p class="text-sm font-semibold text-[#2A8E9E] uppercase tracking-wide">Our Mission</p>
+    <h2 class="mt-4 text-3xl md:text-4xl font-bold text-slate-900">We’ve helped<br class="hidden md:block" /> innovate companies</h2>
+    <p class="mt-4 text-slate-600 max-w-2xl mx-auto leading-relaxed">Hundreds of all sizes and across all industries <br> have made a big improvement with us.</p>
+
+    <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-20">
+      <div>
+        <h3 class="text-3xl font-bold text-slate-900">24%</h3>
+        <p class="text-sm text-slate-600 mt-1">Revenue business</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold text-slate-900">180K</h3>
+        <p class="text-sm text-slate-600 mt-1">In annual revenue</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold text-slate-900">10+</h3>
+        <p class="text-sm text-slate-600 mt-1">Months of runway</p>
+      </div>
+    </div>
+
+    <div class="mt-14">
+      <p class="text-xs uppercase tracking-wider text-slate-500 font-medium">Choose Plan:</p>
+    </div>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <div class="bg-slate-100 hover:bg-slate-200 transition-colors rounded-2xl p-8 flex flex-col justify-between text-left shadow-sm">
+        <h3 class="text-lg font-semibold text-slate-900">Plus</h3>
+        <div class="mt-20 flex items-center justify-between">
+          <p class="text-sm text-slate-700">£2.99/month</p>
+          <span class="text-slate-700 text-lg">↗</span>
+        </div>
+      </div>
+
+      <div class="bg-[#2A8E9E] hover:bg-teal-700 transition-colors rounded-2xl p-8 flex flex-col justify-between text-left text-white shadow-sm">
+        <h3 class="text-lg font-semibold">Premium</h3>
+        <div class="mt-20 flex items-center justify-between">
+          <p class="text-sm font-medium">£6.99/month</p>
+          <span class="text-lg">↗</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRY IT NOW SECTION -->
+<section class="max-w-screen-xl mx-auto px-6 lg:px-12 py-16">
+  <div class="bg-[#033042] text-white rounded-2xl px-8 lg:px-16 py-14 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+
+    <!-- Left Side -->
+    <div>
+      <p class="text-sm font-medium text-[#2A8E9E] uppercase tracking-wide">Try It Now</p>
+      <h2 class="mt-3 text-3xl md:text-4xl font-semibold leading-snug">
+        Ready to level up your<br class="hidden md:block" /> payment process?
+      </h2>
+      <p class="mt-4 text-slate-300 text-sm max-w-md leading-relaxed">
+        Support small business with simple invoicing, powerful integrations, and cash flow management tools.
+      </p>
+    </div>
+
+    <!-- Right Buttons -->
+    <div class="flex flex-col sm:flex-row items-start lg:items-center gap-4">
+      <!-- Primary Button -->
+      <button class="bg-[#2A8E9E] hover:bg-[#1F9292] text-white text-sm font-medium px-6 py-4 rounded-2xl transition">
+        Get Started Now
+      </button>
+
+      <!-- Secondary Button -->
+      <button class="group border border-slate-400 text-slate-200 hover:text-white hover:border-white text-sm font-medium px-6 py-4 rounded-2xl flex items-center gap-2 transition outline-none focus:outline-none">
+        Learn More
+        <p class="bg-none text-lg leading-none select-none outline-none focus:outline-non">↗</p>
+      </button>
+      
+    </div>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class=" bg-white">
+    <div class="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-16 py-12">
+      <div class="flex flex-col md:flex-row justify-between gap-12 items-start">
+        <div>
+          <img src="images/Frame 533.png" alt="Finpay" class="h-6 mb-4">
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 w-full md:w-auto">
+          <div>
+            <h4 class="text-slate-800 font-medium mb-3">Solutions</h4>
+            <ul class="space-y-2 text-slate-600 text-sm">
+              <li><a href="#">Small Business</a></li>
+              <li><a href="#">Freelancers</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Taxes</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-slate-800 font-medium mb-3">Company</h4>
+            <ul class="space-y-2 text-slate-600 text-sm">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-slate-800 font-medium mb-3">Learn</h4>
+            <ul class="space-y-2 text-slate-600 text-sm">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Ebooks</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Templates</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-slate-800 font-medium mb-3">Follow us on</h4>
+            <div class="flex items-center gap-4 text-slate-700">
+              <a href="#"><img src="images/mdi_twitter.png" alt="Twitter" class="w-4 h-4"></a>
+              <a href="#"><img src="images/uil_linkedin.png" alt="LinkedIn" class="w-4 h-4"></a>
+              <a href="#"><img src="images/mdi_facebook.png" alt="Facebook" class="w-4 h-4"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-200 mt-10 pt-6 text-center text-slate-500 text-sm">
+        © Finpay 2024. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('menu-open-icon');
+    const closeIcon = document.getElementById('menu-close-icon');
+
+    mobileBtn?.addEventListener('click', () => {
+      const expanded = mobileBtn.getAttribute('aria-expanded') === 'true' || false;
+      mobileBtn.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+      openIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
